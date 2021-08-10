@@ -4,10 +4,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"> <!--Чтобы bootstrap правильно обработал страницу-->
-              content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
         <title>{% block title %}Homepage{% endblock %} - Advertisements Board</title>
-        {% bootstrap_scc %}
+        {% bootstrap_css %}
         <link rel="stylesheet" type="text/css"
         href="{% static 'main/style.css' %}">
         {% bootstrap_javascript jquery='slim' %}
