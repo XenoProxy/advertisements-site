@@ -4,7 +4,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
+        <meta name="viewport"> <!--Чтобы bootstrap правильно обработал страницу-->
               content="width=device-width, initial-scale=1, shrink-to-fit=no" >
         <title>{% block title %}Homepage{% endblock %} - Advertisements Board</title>
         {% bootstrap_scc %}
@@ -12,7 +12,7 @@
         href="{% static 'main/style.css' %}">
         {% bootstrap_javascript jquery='slim' %}
     </head>
-    <body class="container-fluid">
+    <body class="container-fluid"> <!--К телу страницы  привязываем стилевой класс-->
         <header class="mb-4">
             <h1 class="display-1 text-center">Advertisements</h1>
         </header>
