@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class AdvUser(AbstractUser):
-    is_avtivated = models.BooleanField(
+    is_activated = models.BooleanField(
         default=True,
         db_index=True,
         verbose_name='Is activated?',
