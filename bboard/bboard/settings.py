@@ -51,6 +51,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+OPTIONS = [
+    'django. contrib. auth. context_processors. auth',
+    'django. cont rib. messages. context_processors .messages',
+]
+
 ROOT_URLCONF = 'bboard.urls'
 
 TEMPLATES = [
@@ -85,6 +90,8 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+
+AUTH_USER_MODEL = 'main.AdvUser'  # if not work, add 'models' to the path
 
 AUTH_PASSWORD_VALIDATORS = [
     {
