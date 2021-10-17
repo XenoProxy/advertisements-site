@@ -51,6 +51,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+OPTIONS = [
+    'django. contrib. auth. context_processors. auth',
+    'django. cont rib. messages. context_processors .messages',
+]
+
 ROOT_URLCONF = 'bboard.urls'
 
 TEMPLATES = [
